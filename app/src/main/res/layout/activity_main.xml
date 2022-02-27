@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/topla"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="301dp"
+        android:onClick="topla"
+        android:text="Topla"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/sonuc"
+        app:layout_constraintTop_toBottomOf="@+id/sonuc" />
+
+    <EditText
+        android:id="@+id/sayi1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="49dp"
+        android:layout_marginBottom="24dp"
+        android:ems="10"
+        android:hint="1.Sayı"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/sayi2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/sayi2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginEnd="49dp"
+        android:layout_marginBottom="76dp"
+        android:ems="10"
+        android:hint="2.Sayı"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/sonuc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sayi1" />
+
+    <TextView
+        android:id="@+id/sonuc"
+        android:layout_width="150dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="52dp"
+        android:text="TextView"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toTopOf="@+id/topla"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sayi2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
